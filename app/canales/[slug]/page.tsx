@@ -1,4 +1,4 @@
-// app/canales/[slug]/page.tsx - Versión con Mapeo Correcto de Banderas
+// app/canales/[slug]/page.tsx
 import { channelsData, getChannelCategoryBySlug, getAllCategorySlugs } from '@/lib/canales-data';
 import { CONSTANTS, generateSEOMetadata } from '@/lib/seo';
 import { notFound } from 'next/navigation';
@@ -42,9 +42,9 @@ const FlagUK = () => (
       <path fill="#FFFFFF" d="M0 0l32 32M32 0L0 32" stroke="#FFFFFF" strokeWidth="4" />
       <path fill="#C8102E" d="M0 0l32 32M32 0L0 32" stroke="#C8102E" strokeWidth="2" />
       <rect x="0" y="12" width="32" height="8" fill="#FFFFFF" />
-      <rect x="0" y="12" width="32" height="8" fill="#C8102E" y="14" height="4" />
+      <rect x="0" y="14" width="32" height="4" fill="#C8102E" />
       <rect x="12" y="0" width="8" height="32" fill="#FFFFFF" />
-      <rect x="12" y="0" width="8" height="32" fill="#C8102E" x="14" width="4" />
+      <rect x="14" y="0" width="4" height="32" fill="#C8102E" />
     </g>
   </svg>
 );
@@ -250,7 +250,6 @@ const getCountryFlag = (country: string) => {
     
     // Portugal
     'Portugal': <FlagPT />,
-    'Portugal': <FlagPT />,
     'PT': <FlagPT />,
     
     // México
@@ -273,6 +272,25 @@ const getCountryFlag = (country: string) => {
   
   return flagMap[country] || <FlagES />;
 };
+
+// ============ GLOBE ICON (FIXED: REMOVED EXPORT) ============
+function GlobeIcon({ className = "w-6 h-6" }: { className?: string }) {
+  return (
+    <svg 
+      className={className} 
+      xmlns="http://www.w3.org/2000/svg" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" />
+    </svg>
+  );
+}
 
 // ============ TYPES ============
 type Props = { params: Promise<{ slug: string }> };
@@ -307,13 +325,8 @@ export default async function ChannelCategoryPage({ params }: Props) {
 
   const cleanPhone = (CONSTANTS.CONTACT.phone || '+31612345678').replace(/[^0-9]/g, '');
   
-  const discoverPhrases = [
-    `Descubre todos los ${category.totalChannels} canales de ${category.name}`,
-    `Explora más de ${category.totalChannels} canales en directo`,
-    `Accede a toda la programación completa de ${category.name}`,
-    `Más de ${category.totalChannels} canales te esperan`
-  ];
-  const discoverPhrase = discoverPhrases[Math.floor(Math.random() * discoverPhrases.length)];
+  // Determinista en renderizado de servidor para evitar discrepancias de rehidratación
+  const discoverPhrase = `Descubre todos los ${category.totalChannels} canales de ${category.name}`;
 
   return (
     <div className="flex flex-col min-h-screen bg-[#0C0C0E] text-[#F9F9FB] overflow-hidden">
@@ -407,10 +420,8 @@ export default async function ChannelCategoryPage({ params }: Props) {
         {/* CHANNEL CARDS CON FLAGS CORRECTAS */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {category.channels.slice(0, 30).map((channel, idx) => {
-            // Determinar el país del canal
             let countryName = channel.country || category.name;
             
-            // Si el canal tiene género y es deportivo, usar el país del género
             if (channel.genre) {
               const genreCountryMap: Record<string, string> = {
                 'Reino Unido': 'UK',
@@ -433,7 +444,6 @@ export default async function ChannelCategoryPage({ params }: Props) {
               }
             }
             
-            // Si el nombre del canal contiene un país
             const countryKeywords = ['UK', 'USA', 'France', 'Germany', 'Italy', 'Portugal', 'Mexico', 'Argentina', 'Colombia', 'Chile'];
             for (const keyword of countryKeywords) {
               if (channel.name.includes(keyword) || channel.description.includes(keyword)) {
@@ -465,7 +475,6 @@ export default async function ChannelCategoryPage({ params }: Props) {
                       <h3 className="font-black text-white text-sm uppercase tracking-tight leading-tight truncate">
                         {channel.name}
                       </h3>
-                      {/* FLAG CORRECTA DEL PAÍS */}
                       <div className="flex items-center gap-1.5 mt-0.5">
                         {getCountryFlag(countryName)}
                         <span className="text-[10px] text-white/50 font-bold truncate">
@@ -495,50 +504,52 @@ export default async function ChannelCategoryPage({ params }: Props) {
         </div>
 
         {/* DISCOVER MORE CARD */}
-        <div className="mt-12">
-          <div className="relative overflow-hidden bg-gradient-to-br from-[#CA1421]/20 via-[#CA1421]/10 to-transparent border-2 border-[#CA1421]/30 rounded-3xl p-8 sm:p-12 text-center hover:border-[#CA1421] transition-all duration-500 group">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(202,20,33,0.15)_0%,_transparent_70%)]" />
-            
-            <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 bg-[#CA1421]/20 px-4 py-2 rounded-full mb-4">
-                <Sparkles className="w-5 h-5 text-[#FFCC00]" />
-                <span className="text-[#FFCC00] font-black text-xs uppercase tracking-widest whitespace-nowrap">
-                  {category.totalChannels - 30}+ Canales Más
-                </span>
-              </div>
+        {category.channels.length > 30 && (
+          <div className="mt-12">
+            <div className="relative overflow-hidden bg-gradient-to-br from-[#CA1421]/20 via-[#CA1421]/10 to-transparent border-2 border-[#CA1421]/30 rounded-3xl p-8 sm:p-12 text-center hover:border-[#CA1421] transition-all duration-500 group">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(202,20,33,0.15)_0%,_transparent_70%)]" />
               
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-3">
-                {discoverPhrase}
-              </h3>
-              
-              <p className="text-[#F9F9FB]/70 font-bold text-base max-w-2xl mx-auto mb-6">
-                Amplía tu experiencia con todos los canales disponibles de {category.name}.
-              </p>
-              
-              {/* 2 BOTONES */}
-              <div className="flex flex-row items-center justify-center gap-3 max-w-md mx-auto">
-                <Link
-                  href="#all-channels"
-                  className="px-6 py-3 rounded-full bg-[#CA1421] text-white font-black text-xs uppercase tracking-widest hover:bg-[#b0111c] transition-all hover:scale-105 shadow-lg shadow-[#CA1421]/30 whitespace-nowrap"
-                >
-                  <ChevronDown className="w-3 h-3 inline mr-1" /> Ver Todos
-                </Link>
-                <Link
-                  href="/planes"
-                  className="px-6 py-3 rounded-full bg-black border-2 border-white/20 text-white font-black text-xs uppercase tracking-widest hover:border-[#CA1421] hover:bg-[#141417] transition-all hover:scale-105 whitespace-nowrap"
-                >
-                  <Award className="w-3 h-3 inline mr-1" /> Elegir Plan
-                </Link>
-              </div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 bg-[#CA1421]/20 px-4 py-2 rounded-full mb-4">
+                  <Sparkles className="w-5 h-5 text-[#FFCC00]" />
+                  <span className="text-[#FFCC00] font-black text-xs uppercase tracking-widest whitespace-nowrap">
+                    {category.totalChannels - 30}+ Canales Más
+                  </span>
+                </div>
+                
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-3">
+                  {discoverPhrase}
+                </h3>
+                
+                <p className="text-[#F9F9FB]/70 font-bold text-base max-w-2xl mx-auto mb-6">
+                  Amplía tu experiencia con todos los canales disponibles de {category.name}.
+                </p>
+                
+                {/* 2 BOTONES */}
+                <div className="flex flex-row items-center justify-center gap-3 max-w-md mx-auto">
+                  <a
+                    href="#all-channels"
+                    className="px-6 py-3 rounded-full bg-[#CA1421] text-white font-black text-xs uppercase tracking-widest hover:bg-[#b0111c] transition-all hover:scale-105 shadow-lg shadow-[#CA1421]/30 whitespace-nowrap inline-flex items-center justify-center"
+                  >
+                    <ChevronDown className="w-3 h-3 inline mr-1" /> Ver Todos
+                  </a>
+                  <Link
+                    href="/planes"
+                    className="px-6 py-3 rounded-full bg-black border-2 border-white/20 text-white font-black text-xs uppercase tracking-widest hover:border-[#CA1421] hover:bg-[#141417] transition-all hover:scale-105 whitespace-nowrap inline-flex items-center justify-center"
+                  >
+                    <Award className="w-3 h-3 inline mr-1" /> Elegir Plan
+                  </Link>
+                </div>
 
-              <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs text-white/50 font-bold">
-                <span className="flex items-center gap-1 whitespace-nowrap"><Tv className="w-3 h-3" /> {category.totalChannels} Canales</span>
-                <span className="flex items-center gap-1 whitespace-nowrap"><GlobeIcon className="w-3 h-3" /> Sin restricciones</span>
-                <span className="flex items-center gap-1 whitespace-nowrap"><Clock className="w-3 h-3" /> 7 días catch-up</span>
+                <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs text-white/50 font-bold">
+                  <span className="flex items-center gap-1 whitespace-nowrap"><Tv className="w-3 h-3" /> {category.totalChannels} Canales</span>
+                  <span className="flex items-center gap-1 whitespace-nowrap"><GlobeIcon className="w-3 h-3" /> Sin restricciones</span>
+                  <span className="flex items-center gap-1 whitespace-nowrap"><Clock className="w-3 h-3" /> 7 días catch-up</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
 
         {/* ALL CHANNELS */}
         <div id="all-channels" className="mt-16 pt-8 border-t border-white/10">
@@ -553,7 +564,6 @@ export default async function ChannelCategoryPage({ params }: Props) {
             {category.channels.slice(30).map((channel, idx) => {
               let countryName = channel.country || category.name;
               
-              // Detectar país del nombre o género
               const countryKeywords = ['UK', 'USA', 'France', 'Germany', 'Italy', 'Portugal', 'Mexico', 'Argentina', 'Colombia', 'Chile'];
               for (const keyword of countryKeywords) {
                 if (channel.name.includes(keyword) || channel.description.includes(keyword) || channel.genre?.includes(keyword)) {
@@ -677,16 +687,5 @@ export default async function ChannelCategoryPage({ params }: Props) {
         </div>
       </section>
     </div>
-  );
-}
-
-// ============ GLOBE ICON ============
-function GlobeIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="10" />
-      <line x1="2" y1="12" x2="22" y2="12" />
-      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-    </svg>
   );
 }
