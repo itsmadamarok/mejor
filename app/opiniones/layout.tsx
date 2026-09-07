@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+      title: `${PAGE_TITLE}`,
       description: PAGE_DESCRIPTION,
       url: `https://${CONSTANTS.DOMAIN}/opiniones`,
       type: 'website',
@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+      title: `${PAGE_TITLE}`,
       description: PAGE_DESCRIPTION,
       images: [`https://${CONSTANTS.DOMAIN}/img/structer.webp`],
     },
@@ -143,7 +143,7 @@ export default function ReviewsLayout({ children }: { children: ReactNode }) {
   const webpageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    name: `${PAGE_TITLE}`,
     description: PAGE_DESCRIPTION,
     url: `https://${CONSTANTS.DOMAIN}/opiniones`,
     primaryImageOfPage: {

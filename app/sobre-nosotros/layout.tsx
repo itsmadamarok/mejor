@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   ...generateSEOMetadata(PAGE_TITLE, PAGE_DESCRIPTION, '/sobre-nosotros'),
-  title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+  title: `${PAGE_TITLE}`,
   description: PAGE_DESCRIPTION,
   keywords: [
     CONSTANTS.FOCUS_KEYWORD,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${PAGE_TITLE}`,
     description: PAGE_DESCRIPTION,
     url: `https://${CONSTANTS.DOMAIN}/sobre-nosotros`,
     siteName: CONSTANTS.BRAND_NAME,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${PAGE_TITLE}`,
     description: PAGE_DESCRIPTION,
     images: [`https://${CONSTANTS.DOMAIN}/img/structer.webp`],
   },
@@ -76,7 +76,7 @@ export default function AboutLayout({ children }: { children: ReactNode }) {
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    name: `${PAGE_TITLE}`,
     description: PAGE_DESCRIPTION,
     url: `https://${CONSTANTS.DOMAIN}/sobre-nosotros`,
     mainEntity: {

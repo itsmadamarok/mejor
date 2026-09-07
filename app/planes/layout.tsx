@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${PAGE_TITLE}`,
     description: PAGE_DESCRIPTION,
     url: `https://${CONSTANTS.DOMAIN}/planes`,
     siteName: CONSTANTS.BRAND_NAME,
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${PAGE_TITLE}`,
     description: PAGE_DESCRIPTION,
     images: [`https://${CONSTANTS.DOMAIN}/img/structer.webp`],
   },

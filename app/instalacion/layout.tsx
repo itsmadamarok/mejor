@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     PAGE_DESCRIPTION,
     '/instalacion'
   ),
-  title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+  title: `${PAGE_TITLE}`,
   description: PAGE_DESCRIPTION,
   keywords: [
     'guia instalacion iptv',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${PAGE_TITLE}`,
     description: PAGE_DESCRIPTION,
     url: `https://${CONSTANTS.DOMAIN}/instalacion`,
     siteName: CONSTANTS.BRAND_NAME,
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${PAGE_TITLE}`,
     description: PAGE_DESCRIPTION,
     images: [`https://${CONSTANTS.DOMAIN}/img/structer.webp`],
   },
@@ -232,7 +232,7 @@ const WebPageSchema = () => (
       __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        name: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+        name: `${PAGE_TITLE}`,
         description: PAGE_DESCRIPTION,
         url: `https://${CONSTANTS.DOMAIN}/instalacion`,
         primaryImageOfPage: {

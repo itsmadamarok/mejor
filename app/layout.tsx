@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${HOME_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${HOME_TITLE}`,
     description: HOME_DESCRIPTION,
     url: CONSTANTS.SITE_URL,
     siteName: CONSTANTS.BRAND_NAME,
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${HOME_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${HOME_TITLE}`,
     description: HOME_DESCRIPTION,
     images: [`${CONSTANTS.SITE_URL}/img/structer.webp`],
   },
@@ -310,7 +310,7 @@ const WebPageSchema = () => (
       __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        name: `${HOME_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+        name: `${HOME_TITLE}`,
         description: HOME_DESCRIPTION,
         url: CONSTANTS.SITE_URL,
         inLanguage: 'es-ES',
@@ -351,7 +351,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
 
-        <GoogleAnalytics gaId="G-MEJORIPTV" />
+        <GoogleAnalytics gaId="G-J6D6ZYTLT9" />
         <FloatingWhatsApp />
       </body>
     </html>

@@ -10,7 +10,7 @@ const PAGE_DESCRIPTION = `Resuelve tus dudas sobre nuestro servicio IPTV en Espa
 export async function generateMetadata(): Promise<Metadata> {
   return {
     ...generateSEOMetadata(PAGE_TITLE, PAGE_DESCRIPTION, '/preguntas-frecuentes'),
-    title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${PAGE_TITLE}`,
     description: PAGE_DESCRIPTION,
     keywords: [
       CONSTANTS.FOCUS_KEYWORD,
@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+      title: `${PAGE_TITLE}`,
       description: PAGE_DESCRIPTION,
       url: `https://${CONSTANTS.DOMAIN}/preguntas-frecuentes`,
       type: 'website',
@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${PAGE_TITLE} | ${CONSTANTS.BRAND_NAME}`,
+      title: `${PAGE_TITLE}`,
       description: PAGE_DESCRIPTION,
       images: [`https://${CONSTANTS.DOMAIN}/img/structer.webp`],
     },

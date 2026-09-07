@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props) {
   const cleanTitle = post.title.length > 60 ? `${post.title.substring(0, 57)}...` : post.title;
 
   return {
-    title: `${cleanTitle} | ${CONSTANTS.BRAND_NAME}`,
+    title: `${cleanTitle}`,
     description: post.description || post.excerpt || `Bekijk de officiële ${CONSTANTS.BRAND_NAME} handleiding voor ${post.title}.`,
     keywords: post.keywords ? post.keywords.join(', ') : CONSTANTS.PRIMARY_KEYWORDS.join(', '),
     alternates: {
