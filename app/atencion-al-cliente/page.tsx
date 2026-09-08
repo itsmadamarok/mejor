@@ -220,7 +220,7 @@ export default function ContactPage() {
   };
 
   const startWhatsAppChat = () => {
-    const defaultText = encodeURIComponent(`Hola ${BRAND_NAME}, tengo una pregunta sobre el ${SECOND_FOCUS_KEYWORD}.`);
+    const defaultText = encodeURIComponent("Hola, buenas. Tengo una consulta sobre los servicios disponibles.");
     window.open(`https://wa.me/${cleanPhone}?text=${defaultText}`, '_blank');
   };
 
@@ -440,7 +440,7 @@ export default function ContactPage() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-[#1A1A1D]/50 text-[10px] sm:text-xs uppercase tracking-widest font-black">WhatsApp</p>
-                    <a href={`https://wa.me/${cleanPhone}`} target="_blank" rel="noopener noreferrer" className="text-[#1A1A1D] hover:text-[#CA1421] transition-colors text-xs sm:text-sm font-bold block truncate">
+                    <a href={`https://live-support.netlify.app/${cleanPhone}`} target="_blank" rel="noopener noreferrer" className="text-[#1A1A1D] hover:text-[#CA1421] transition-colors text-xs sm:text-sm font-bold block truncate">
                       {CONSTANTS.CONTACT.phone}
                     </a>
                   </div>

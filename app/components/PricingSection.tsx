@@ -30,15 +30,15 @@ export default function PricingSection() {
   const currentPricing = pricing[devices] || pricing[1];
 
   const handleWhatsAppRedirect = (months: number) => {
-    const message = `Hola ${CONSTANTS.BRAND_NAME}, quiero contratar una suscripción de ${months} meses para ${devices} ${
-      devices > 1 ? 'pantallas' : 'pantalla'
-    }. ¡Me interesa el mejor servicio de IPTV 4K, LaLiga y fútbol en directo!`;
-    const whatsappUrl = `${CONSTANTS.CONTACT.whatsapp}?text=${encodeURIComponent(message)}`;
+      const message = `Hola, buenas. Me interesa la suscripción de ${months} meses para ${devices} ${
+          devices > 1 ? 'dispositivos' : 'dispositivo'
+        } por €${price}.`;
+      const whatsappUrl = `${CONSTANTS.CONTACT.whatsapp}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleFreeTrialRedirect = () => {
-    const message = `Hola ${CONSTANTS.BRAND_NAME}, quiero solicitar mi prueba IPTV gratuita de 24 horas para comprobar la estabilidad de los canales y deportes.`;
+    const message = "Hola, me gustaría solicitar el acceso de prueba de 24 horas, por favor.";
     const whatsappUrl = `${CONSTANTS.CONTACT.whatsapp}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

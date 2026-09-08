@@ -21,13 +21,13 @@ import {
 } from 'lucide-react';
 
 const CONSTANTS = {
-  BRAND_NAME: 'Marinios IPTV',
-  DOMAIN: 'mariniosiptv.vip',
-  FOCUS_KEYWORD: 'IPTV España',
+  BRAND_NAME: 'Mejor IPTV',
+  DOMAIN: 'mejoriptv.org',
+  FOCUS_KEYWORD: 'Mejor IPTV España',
   SECOND_FOCUS_KEYWORD: 'Suscripción IPTV',
   THIRD_FOCUS_KEYWORD: 'Comprar IPTV',
   CONTACT: {
-    phone: '+34000000000',
+    phone: '+447462159850',
   },
 };
 
@@ -497,8 +497,7 @@ export default function ReviewsPage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href={`https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodeURIComponent(`Hola ${BRAND_NAME}, me gustaría solicitar información sobre ${SECOND_FOCUS_KEYWORD}.`)}`}
-              target="_blank"
+              href={`https://live-support.netlify.app/${encodeURIComponent('Hola, me gustaría solicitar información sobre los planes y servicios disponibles.')}`}              target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#25D366] text-white font-black text-xs uppercase tracking-widest hover:bg-[#20ba5a] transition-all shadow-xl flex items-center justify-center gap-2 whitespace-nowrap"
             >

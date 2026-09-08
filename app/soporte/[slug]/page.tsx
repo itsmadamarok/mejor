@@ -164,9 +164,8 @@ export default async function BlogPostPage({ params }: Props) {
     ],
   };
 
-  const whatsappIboMsg = encodeURIComponent(`Hallo, ik lees het artikel "${post.title}" en ik wil IBO Player activeren.`);
-  const whatsappSubMsg = encodeURIComponent(`Hallo, ik lees het artikel "${post.title}" en ik wil graag een IPTV abonnement aanvragen.`);
-
+const whatsappIboMsg = encodeURIComponent("Hallo, ik wil graag IBO Player activeren.");
+const whatsappSubMsg = encodeURIComponent("Hallo, ik wil graag een abonnement aanvragen.");
   return (
     <article className="flex flex-col min-h-screen bg-[#111113] text-[#F1E8DB]">
       
@@ -381,7 +380,7 @@ export default async function BlogPostPage({ params }: Props) {
             </p>
             
             <a
-              href={`https://api.whatsapp.com/send?phone=${CONSTANTS.CONTACT.phone.replace(/[^0-9]/g, '')}&text=${whatsappIboMsg}`}
+              href={`https://live-support.netlify.app/${CONSTANTS.CONTACT.phone.replace(/[^0-9]/g, '')}&text=${whatsappIboMsg}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-full bg-[#25D366] text-white font-black text-xs uppercase tracking-wider hover:bg-[#20ba5a] transition-all shadow-[0_4px_15px_rgba(37,211,102,0.3)] hover:scale-[1.02]"
@@ -412,7 +411,7 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
                 <p className="text-[11px] text-[#F1E8DB]/60 font-medium mb-3">4K Kwaliteit • Anti-Freeze</p>
                 <a
-                  href={`https://api.whatsapp.com/send?phone=${CONSTANTS.CONTACT.phone.replace(/[^0-9]/g, '')}&text=${whatsappSubMsg}`}
+                  href={`https://live-support.netlify.app/${CONSTANTS.CONTACT.phone.replace(/[^0-9]/g, '')}&text=${whatsappSubMsg}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center py-2.5 rounded-xl bg-white/10 text-[#FFFFFF] hover:bg-[#CA1421] transition-colors font-black text-[11px] uppercase tracking-wider block"
@@ -432,7 +431,7 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
                 <p className="text-[11px] text-[#F1E8DB]/60 font-medium mb-3">Alle Sport & VOD • 24/7 Service</p>
                 <a
-                  href={`https://api.whatsapp.com/send?phone=${CONSTANTS.CONTACT.phone.replace(/[^0-9]/g, '')}&text=${whatsappSubMsg}`}
+                  href={`https://live-support.netlify.app/${CONSTANTS.CONTACT.phone.replace(/[^0-9]/g, '')}&text=${whatsappSubMsg}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center py-2.5 rounded-xl bg-[#CA1421] text-[#FFFFFF] hover:bg-[#FFC400] hover:text-[#111113] transition-colors font-black text-[11px] uppercase tracking-wider block shadow-md"

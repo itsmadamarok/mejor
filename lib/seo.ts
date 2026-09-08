@@ -41,7 +41,7 @@ export const CONSTANTS = {
   CONTACT: {
     email: `support@${DOMAIN}`,
     phone: '+44 7549 589503',
-    whatsapp: 'https://wa.me/447549589503',
+    whatsapp: 'https://live-support.netlify.app',
     supportHours: 'Soporte técnico 24/7 vía WhatsApp y correo electrónico',
   },
 

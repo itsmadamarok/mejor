@@ -287,12 +287,14 @@ export const blogPosts: BlogPost[] = [
           >
             Ver Planes y Precios
           </a>
-          <a 
-            href="https://wa.me/447549589503?text=Hola,%20quiero%20probar%20el%20test%20de%2024h%20de%20IPTV%20Deportes%204K" 
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center bg-[#FFC400] hover:bg-[#d8a800] text-[#111113] font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg hover:scale-105 text-center"
-          >
+            <a 
+              href="https://live-support.netlify.app/?text=Hola,%20quiero%20probar%20la%20demostración%20de%2024%20horas,%20por%20favor." 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center bg-[#FFC400] hover:bg-[#d8a800] text-[#111113] font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg hover:scale-105 text-center"
+            >
+              Solicitar Demo 24H
+            </a>
             Solicitar Test Deportes 24h
           </a>
         </div>
@@ -564,14 +566,14 @@ export const blogPosts: BlogPost[] = [
           >
             Ver Planes y Precios
           </a>
-          <a 
-            href="https://wa.me/447549589503?text=Hola,%20quiero%20comprar%20una%20prueba%20Xtream%20Codes%20de%2024h" 
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center justify-center bg-[#FFC400] hover:bg-[#d8a800] text-[#111113] font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg hover:scale-105 text-center"
-          >
-            Solicitar Prueba Gratis 24h
-          </a>
+            <a 
+              href="https://live-support.netlify.app/?text=Hola,%20me%20gustaría%20solicitar%20la%20demostración%20de%2024%20horas,%20por%20favor." 
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center bg-[#FFC400] hover:bg-[#d8a800] text-[#111113] font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg hover:scale-105 text-center"
+            >
+              Solicitar Demo 24H
+            </a>
         </div>
       </div>
     `
@@ -835,12 +837,12 @@ export const blogPosts: BlogPost[] = [
             Ver Planes y Precios
           </a>
           <a 
-            href="https://wa.me/447549589503?text=Hola,%20quiero%20probar%20un%20test%20sin%20cortes%20de%2024h" 
+            href="https://live-support.netlify.app/?text=Hola,%20me%20gustaría%20solicitar%20la%20demostración%20de%2024%20horas,%20por%20favor." 
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center bg-[#FFC400] hover:bg-[#d8a800] text-[#111113] font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg hover:scale-105 text-center"
           >
-            Solicitar Prueba Gratis 24h
+            Solicitar Demo 24H
           </a>
         </div>
       </div>
@@ -1118,12 +1120,12 @@ export const blogPosts: BlogPost[] = [
             Ver Planes y Precios
           </a>
           <a 
-            href="https://wa.me/447549589503?text=Hola,%20quiero%20solicitar%20mi%20prueba%20gratis%20de%2024h" 
+            href="https://live-support.netlify.app/?text=Hola,%20me%20gustaría%20solicitar%20la%20demostración%20de%2024%20horas,%20por%20favor." 
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center bg-[#FFC400] hover:bg-[#d8a800] text-[#111113] font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg hover:scale-105 text-center"
           >
-            Solicitar Prueba Gratis 24h
+            Solicitar Demo 24H
           </a>
         </div>
       </div>
@@ -1391,12 +1393,12 @@ export const blogPosts: BlogPost[] = [
             Ver Planes y Precios
           </a>
           <a 
-            href="https://wa.me/447549589503?text=Hola,%20quiero%20probarmiapp%20en%20Firestick%2024h" 
+            href="https://live-support.netlify.app/?text=Hola,%20me%20gustaría%20solicitar%20la%20demostración%20de%2024%20horas,%20por%20favor." 
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center bg-[#FFC400] hover:bg-[#d8a800] text-[#111113] font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg hover:scale-105 text-center"
           >
-            Solicitar Prueba Gratis 24h
+            Solicitar Demo 24H
           </a>
         </div>
       </div>
@@ -1657,12 +1659,12 @@ export const blogPosts: BlogPost[] = [
             Ver Planes y Precios
           </a>
           <a 
-            href="https://wa.me/447549589503?text=Hola,%20necesito%20ayuda%20para%20configurar%20IBO%20Player%20Pro" 
+            href="https://live-support.netlify.app/?text=Hola,%20necesito%20ayuda%20con%20la%20configuración%20de%20la%20aplicación,%20por%20favor." 
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center bg-[#FFC400] hover:bg-[#d8a800] text-[#111113] font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg hover:scale-105 text-center"
           >
-            Solicitar Prueba Gratis 24h
+            Soporte Técnico
           </a>
         </div>
       </div>
@@ -1930,12 +1932,12 @@ export const blogPosts: BlogPost[] = [
             Ver Planes y Precios
           </a>
           <a 
-            href="https://wa.me/447549589503?text=Hola,%20quiero%20probar%20una%20cuenta%20Xtream%20Codes%20de%2024h" 
+            href="https://live-support.netlify.app/?text=Hola,%20me%20gustaría%20solicitar%20la%20demostración%20de%2024%20horas,%20por%20favor." 
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center bg-[#FFC400] hover:bg-[#d8a800] text-[#111113] font-bold py-3.5 px-8 rounded-xl transition-all shadow-lg hover:scale-105 text-center"
           >
-            Solicitar Prueba Gratis 24h
+            Solicitar Demo 24H
           </a>
         </div>
       </div>

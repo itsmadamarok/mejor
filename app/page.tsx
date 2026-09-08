@@ -794,7 +794,7 @@ export default function Home() {
           tag: "Cliente verificado"
         },
         { 
-          name: "Carlos Romero", 
+          name: "Elena Romero", 
           location: "Valencia, España",
           text: `Un servicio de ${SECOND_FOCUS_KEYWORD} con calidad realmente premium. Cero cortes en los partidos del fin de semana y la guía de programación funciona de maravilla en Firestick.`, 
           avatar: "/img/03.jpg",
