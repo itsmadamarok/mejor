@@ -9,7 +9,7 @@ export default function PricingSection() {
   const [devices, setDevices] = useState<1 | 2 | 3>(1);
 
   // Exact pricing structure in Euros for Mejor IPTV
-  const pricing = {
+  const pricing: Record<number, Record<number, { total: number; mo: string }>> = {
     1: {
       3: { total: 29, mo: (29 / 3).toFixed(2) },
       6: { total: 45, mo: (45 / 6).toFixed(2) },
@@ -30,17 +30,19 @@ export default function PricingSection() {
   const currentPricing = pricing[devices] || pricing[1];
 
   const handleWhatsAppRedirect = (months: number) => {
-      const message = `Hola, buenas. Me interesa la suscripción de ${months} meses para ${devices} ${
-          devices > 1 ? 'dispositivos' : 'dispositivo'
-        } por €${price}.`;
-      const whatsappUrl = `${CONSTANTS.CONTACT.whatsapp}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const price = currentPricing[months]?.total || 0;
+    const message = `Hola, buenas. Me interesa la suscripción de ${months} meses para ${devices} ${
+      devices > 1 ? 'dispositivos' : 'dispositivo'
+    } por €${price}.`;
+
+    const whatsappUrl = `https://live-support.netlify.app/?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   const handleFreeTrialRedirect = () => {
     const message = "Hola, me gustaría solicitar el acceso de prueba de 24 horas, por favor.";
-    const whatsappUrl = `${CONSTANTS.CONTACT.whatsapp}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const whatsappUrl = `https://live-support.netlify.app/?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -137,7 +139,7 @@ export default function PricingSection() {
               ))}
             </ul>
             <div className="w-full flex mt-auto">
-              <button 
+              <button
                 onClick={() => handleWhatsAppRedirect(3)}
                 className="w-full text-center whitespace-nowrap px-6 py-4 rounded-full bg-[#CA1421] text-white font-black text-xs sm:text-sm uppercase tracking-widest transition-transform hover:scale-105 shrink-0 shadow-lg border border-red-400/40"
               >
@@ -147,7 +149,7 @@ export default function PricingSection() {
           </div>
         </FadeInItem>
 
-        {/* 12 Months Plan Card (Featured - Badge placed perfectly on top border) */}
+        {/* 12 Months Plan Card */}
         <FadeInItem className="relative bg-[#111113] border-4 border-[#FFC400] rounded-3xl p-6 sm:p-10 flex flex-col transform lg:-translate-y-4 shadow-[0_0_70px_rgba(255,196,0,0.4)] z-20 group overflow-visible transition-all duration-300 hover:-translate-y-6 mt-6 lg:mt-0">
           
           <div className="absolute -top-5 left-1/2 -translate-x-1/2 z-35">
