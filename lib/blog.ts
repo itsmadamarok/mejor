@@ -38,12 +38,12 @@ export const blogPosts: BlogPost[] = [
       "comprobar iptv estable 2026",
       "checklist comprar suscripcion iptv"
     ],
-    image: "/img/blog/article-12/cover.webp",
+    image: "/img/blog/article-3/cover.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
         <img 
-          src="/img/blog/article-12/cover.webp" 
+          src="/img/blog/article-3/cover.webp" 
           alt="Suscripción IPTV de alta calidad qué verificar antes de comprar" 
           class="w-full h-full object-cover"
         />
@@ -125,7 +125,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 2: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-12/image-1.webp" 
+          src="/img/blog/article-3/image-1.webp" 
           alt="Panel técnico de estadísticas de un canal IPTV de alta calidad" 
           class="w-full h-auto object-cover"
         />
@@ -192,7 +192,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 3: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-12/image-2.webp" 
+          src="/img/blog/article-3/image-2.webp" 
           alt="EPG en castellano y catálogo VOD de una suscripción IPTV de calidad" 
           class="w-full h-auto object-cover"
         />
@@ -219,7 +219,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 4: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-12/image-3.webp" 
+          src="/img/blog/article-3/image-3.webp" 
           alt="Señales de alarma a detectar antes de comprar una suscripción IPTV" 
           class="w-full h-auto object-cover"
         />
@@ -341,12 +341,12 @@ export const blogPosts: BlogPost[] = [
       "comprar iptv economico estable",
       "suscripcion iptv mejor precio calidad"
     ],
-    image: "/img/blog/article-11/cover.webp",
+    image: "/img/blog/article-4/cover.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
         <img 
-          src="/img/blog/article-11/cover.webp" 
+          src="/img/blog/article-4/cover.webp" 
           alt="IPTV al mejor precio en España cómo identificar una oferta de calidad" 
           class="w-full h-full object-cover"
         />
@@ -428,7 +428,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 2: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-11/image-1.webp" 
+          src="/img/blog/article-4/image-1.webp" 
           alt="Comparativa de precios entre ofertas IPTV fraudulentas y proveedores de calidad" 
           class="w-full h-auto object-cover"
         />
@@ -489,7 +489,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 3: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-11/image-2.webp" 
+          src="/img/blog/article-4/image-2.webp" 
           alt="Cálculo del coste mensual real de una suscripción IPTV premium" 
           class="w-full h-auto object-cover"
         />
@@ -552,7 +552,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 4: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-11/image-3.webp" 
+          src="/img/blog/article-4/image-3.webp" 
           alt="Estrategias de ahorro en suscripciones IPTV sin perder calidad" 
           class="w-full h-auto object-cover"
         />
@@ -632,12 +632,12 @@ export const blogPosts: BlogPost[] = [
       "suscripcion iptv 4k españa",
       "contratar suscripcion iptv premium"
     ],
-    image: "/img/blog/article-10/cover.webp",
+    image: "/img/blog/article-2/cover.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
         <img 
-          src="/img/blog/article-10/cover.webp" 
+          src="/img/blog/article-2/cover.webp" 
           alt="Mejor suscripción IPTV España calidad 4K y servidores anti-cortes" 
           class="w-full h-full object-cover"
         />
@@ -711,7 +711,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 2: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-10/image-1.webp" 
+          src="/img/blog/article-2/image-1.webp" 
           alt="Infraestructura de servidores distribuidos para suscripción IPTV premium" 
           class="w-full h-auto object-cover"
         />
@@ -778,7 +778,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 3: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-10/image-2.webp" 
+          src="/img/blog/article-2/image-2.webp" 
           alt="Sistema de enrutamiento dinámico en servidores anti-cortes IPTV" 
           class="w-full h-auto object-cover"
         />
@@ -845,7 +845,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 4: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-10/image-3.webp" 
+          src="/img/blog/article-2/image-3.webp" 
           alt="Suscripción IPTV compatible con Smart TV Firestick y dispositivos móviles" 
           class="w-full h-auto object-cover"
         />
@@ -924,12 +924,12 @@ export const blogPosts: BlogPost[] = [
       "ver iptv 4k sin cortes",
       "mejor iptv 4k españa 2026"
     ],
-    image: "/img/blog/article-9/cover.webp",
+    image: "/img/blog/article-1/cover.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
         <img 
-          src="/img/blog/article-9/cover.webp" 
+          src="/img/blog/article-1/cover.webp" 
           alt="IPTV 4K España cómo ver contenido en Ultra HD sin cortes" 
           class="w-full h-full object-cover"
         />
@@ -1003,7 +1003,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 2: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-9/image-1.webp" 
+          src="/img/blog/article-1/image-1.webp" 
           alt="Comparativa visual entre IPTV 4K real y reescalado falso" 
           class="w-full h-auto object-cover"
         />
@@ -1070,7 +1070,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 3: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-9/image-2.webp" 
+          src="/img/blog/article-1/image-2.webp" 
           alt="Comparativa de códecs H.264 y H.265 en emisiones IPTV 4K" 
           class="w-full h-auto object-cover"
         />
@@ -1137,7 +1137,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 4: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-9/image-3.webp" 
+          src="/img/blog/article-1/image-3.webp" 
           alt="Dispositivo Firestick 4K configurado para reproducir IPTV en Ultra HD" 
           class="w-full h-auto object-cover"
         />
@@ -1217,12 +1217,12 @@ export const blogPosts: BlogPost[] = [
       "mejor suscripcion iptv españa",
       "comparativa iptv españa"
     ],
-    image: "/img/blog/article-8/cover.webp",
+    image: "/img/blog/article-5/cover.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
         <img 
-          src="/img/blog/article-8/cover.webp" 
+          src="/img/blog/article-5/cover.webp" 
           alt="Mejor IPTV España 2026 comparativa de proveedores premium y estables" 
           class="w-full h-full object-cover"
         />
@@ -1296,7 +1296,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 2: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-8/image-1.webp" 
+          src="/img/blog/article-5/image-1.webp" 
           alt="Panel de control y credenciales privadas del mejor IPTV en España" 
           class="w-full h-auto object-cover"
         />
@@ -1364,7 +1364,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 3: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-8/image-2.webp" 
+          src="/img/blog/article-5/image-2.webp" 
           alt="Comparativa visual entre servidores IPTV baratos y plataforma premium" 
           class="w-full h-auto object-cover"
         />
@@ -1427,7 +1427,7 @@ export const blogPosts: BlogPost[] = [
       <!-- IMAGE 4: INLINE ARTICLE IMAGE -->
       <div class="my-8 rounded-xl overflow-hidden border border-[#111113]/20 shadow-md">
         <img 
-          src="/img/blog/article-8/image-3.webp" 
+          src="/img/blog/article-5/image-3.webp" 
           alt="Servidores anti-freeze funcionando durante un partido de máxima audiencia" 
           class="w-full h-auto object-cover"
         />
