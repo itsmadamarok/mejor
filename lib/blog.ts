@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
       "comprobar iptv estable 2026",
       "checklist comprar suscripcion iptv"
     ],
-    image: "/img/blog/article-3/cover.webp",
+    image: "/img/blog/article-5/image-1.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
@@ -341,7 +341,7 @@ export const blogPosts: BlogPost[] = [
       "comprar iptv economico estable",
       "suscripcion iptv mejor precio calidad"
     ],
-    image: "/img/blog/article-4/cover.webp",
+    image: "/img/blog/article-6/image-3.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
@@ -632,7 +632,7 @@ export const blogPosts: BlogPost[] = [
       "suscripcion iptv 4k españa",
       "contratar suscripcion iptv premium"
     ],
-    image: "/img/blog/article-2/cover.webp",
+    image: "/img/blog/article-7/image-1.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
@@ -924,7 +924,7 @@ export const blogPosts: BlogPost[] = [
       "ver iptv 4k sin cortes",
       "mejor iptv 4k españa 2026"
     ],
-    image: "/img/blog/article-1/cover.webp",
+    image: "/img/blog/article-4/image-2.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
@@ -1217,7 +1217,7 @@ export const blogPosts: BlogPost[] = [
       "mejor suscripcion iptv españa",
       "comparativa iptv españa"
     ],
-    image: "/img/blog/article-5/cover.webp",
+    image: "/img/blog/article-1/image-3.webp",
     content: `
       <!-- IMAGE 1: COVER IMAGE -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border-2 border-[#CA1421]">
